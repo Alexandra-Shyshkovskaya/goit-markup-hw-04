@@ -94,6 +94,18 @@ li {
   color: var(--active-color);
 }
 
+.contacts {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-contacts {
+  padding: 0;
+  margin: 0 10px 0 0;
+  fill: currentColor;
+}
+
 /* оформление логотипа */
 
 .logo-header,
