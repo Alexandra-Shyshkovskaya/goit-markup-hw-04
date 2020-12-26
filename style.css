@@ -6,6 +6,7 @@
   --active-color: #2196f3;
   --background-hero: #2f303a;
   --background-overlay: #c4c4c4;
+  --background-icons: #f5f4fa;
 }
 
 body {
@@ -230,6 +231,22 @@ li {
   margin: 0;
 }
 
+.ground-of-icons {
+  display: inline-flex;
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-icons);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.icons-of-pluses {
+  width: 70px;
+  height: 70px;
+}
+
 /*Блок чем мы занимаемся*/
 
 .block-we-do {
@@ -237,7 +254,8 @@ li {
 }
 
 .we-do,
-.our-comands {
+.our-comands,
+.title-clients {
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
@@ -308,8 +326,85 @@ img {
   color: var(--additional-text-color);
 
   text-align: center;
-  padding: 10px 0 30px;
+  padding: 10px 0 16px;
   margin: 0;
+}
+
+.team-link-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0 0 30px;
+}
+
+.team-soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--background-color);
+}
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--active-color);
+  border-radius: 50%;
+}
+
+.item-soc-link {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.team-soc-link:hover .item-soc-link,
+.team-soc-link:focus .item-soc-link {
+  fill: var(--background-color);
+}
+
+.type-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+/*постоянные клиенты*/
+
+.regular-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list-clients {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+
+.icon-client {
+  fill: currentColor;
+}
+
+.client-link:focus,
+.client-link:hover {
+  color: var(--active-color);
+  border-color: var(--active-color);
+}
+
+.client-type:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*футер*/
@@ -318,6 +413,16 @@ img {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.general-block {
+  display: flex;
+}
+
+.general-block2 {
+  display: inline-block;
+  margin-left: 70px;
+  flex-wrap: wrap;
 }
 
 .foot-address {
@@ -339,34 +444,46 @@ img {
   padding-top: 9px;
 }
 
-.social-networks h1 {
+.social-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
   color: var(--background-color);
+  margin: 0;
+  padding-bottom: 20px;
 }
 
-.socaial-list .socaial-link {
-  display: inline-block;
-  align-items: center;
+.social-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.social-link {
+  display: flex;
   justify-content: center;
-}
-
-.socaial-link {
-  display: inline-block;
+  align-items: center;
   height: 44px;
   width: 44px;
-  background-image: ;
-  background-size: 20px;
-  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  background-position: center;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .social-items {
   width: 20px;
   height: 20px;
+  fill: var(--background-color);
+}
+
+.social-link:focus,
+.social-link:hover {
+  background-color: var(--active-color);
+}
+
+.social-list-links:not(:last-child) {
+  margin-right: 10px;
 }
 
 /*страница портфолио*/
