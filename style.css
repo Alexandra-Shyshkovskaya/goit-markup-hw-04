@@ -515,6 +515,7 @@ img {
   outline: none;
 
   padding: 6px 22px;
+  border-radius: 4px;
 }
 
 .btn-choice:hover,
