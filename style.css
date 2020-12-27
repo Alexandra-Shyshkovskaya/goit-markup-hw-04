@@ -511,7 +511,7 @@ img {
   color: var(--main-text-color);
   background-color: #f5f4fa;
   cursor: pointer;
-  border: 0;
+
   outline: none;
 
   padding: 6px 22px;
